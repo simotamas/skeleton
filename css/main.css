@@ -1,0 +1,120 @@
+/*
+	This is the main css.
+
+	List of content:
+
+	1. Imports
+	2. Variables
+	3. Base
+	4. Typography
+	5. Layout
+	6. Components
+
+*/
+
+/* 1. Imports */
+
+/* 2. Variables */
+
+:root {
+
+  --color-bg: hsl(210, 8%, 95%);
+}
+
+
+/* 3. Base */
+
+* {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+html{
+	-webkit-text-size-adjust:none;
+	-webkit-font-smoothing:antialiased;
+}
+
+html, body{
+	width:100%;
+	height:100%
+}
+
+
+body {
+	background-color: var(--color-bg);
+}
+
+a,body,div,footer,h1,h2,h3,h4,h5,h6,header,html,img,li,nav,p,span,ul {
+	margin:0;
+	padding:0;
+	border:0;
+	font:inherit;
+	font-size:100%
+}
+
+li,ul {
+	list-style:none
+}
+a {
+	color:inherit;
+	text-decoration:none
+}
+a,img,svg {
+	display:block
+}
+
+img {
+	width:100%;
+	height:auto
+
+}
+
+
+/* 4. Typography */
+
+
+h1{
+font-size: 7.594rem;
+}
+h2 {
+font-size: 5.063rem;
+}
+h3 {
+font-size: 3.375rem;
+}
+h4 {
+font-size: 2.25rem;
+}
+h5 {
+font-size: 1.5rem;
+}
+h6 {
+font-size: 1rem;
+}
+
+p {
+	width: clamp(45ch, 50%, 75ch);
+}
+
+/* 5. Layout */
+
+.basic-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+.title{
+	font-size: 3rem;
+}
+
+ul{
+	font-size: 2rem;
+
+}
+
+li{
+	width: 200px;
+	height: 100px;
+}
